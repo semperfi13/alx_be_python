@@ -1,4 +1,4 @@
-age = int(input("How old are you? \n"));
+age = int( input( " How old are you? \n " ) );
 
 
 age = age + 27;
