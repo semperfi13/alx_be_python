@@ -20,7 +20,10 @@ def main():
         elif choice == "2":
             # Prompt for and remove an item
             item = input("item you want to remove: ")
-            shopping_list.remove(item)
+            if item in shopping_list:
+                shopping_list.remove(item)
+            else:
+                print("This item doesn't exist!")
             pass
         elif choice == "3":
             # Display the shopping list
