@@ -18,8 +18,8 @@ def calculate_future_date():
     # Print the future date in a format like “YYYY-MM-DD”.
 
     now = date.today()
-    future_date = (now + timedelta(days=nb_days)).strftime("%Y-%m-%d")
-    return f"Future date: {future_date}"
+    future_date = now + timedelta(days=nb_days)
+    return f"Future date: {future_date.strftime("%Y-%m-%d")}"
 
 
 print(calculate_future_date())
