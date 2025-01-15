@@ -6,10 +6,10 @@ class BankAccount:
         self.account_balance += amout
 
     def withdraw(self, amount):
-        if self.account_balance >= amount:
+        if self.account_balance > amount:
             return True
         else:
             return False
 
     def display_balance(self):
-        print(f"Your current account balance is {self.account_balance}")
+        print(f"Current Balance: ${self.account_balance}")
