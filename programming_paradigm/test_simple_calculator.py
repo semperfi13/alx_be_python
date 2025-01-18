@@ -21,7 +21,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """Test the multiply method."""
         self.assertEqual(self.calc.multiply(3, 6), 18)
 
-    def test_divide(self):
+    def test_division(self):
         """Test the divide method."""
         self.assertEqual(self.calc.divide(10, 2), 5)
 
